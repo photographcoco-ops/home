@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>co&co photograph</title>
+    <meta name="description" content="広島を拠点とするフォトグラファー co&co photograph。ポートレート、イベント、商用撮影など、一瞬の美しさを永遠に。">
+
+    <!-- SEO & Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:site_name" content="co&co photograph">
+    <meta property="og:title" content="co&co photograph | 広島の出張撮影・フォトグラファー">
+    <meta property="og:description"
+        content="広島を拠点とするフォトグラファー co&co photograph。ポートレート、イベント、商用撮影など、一瞬の美しさを永遠に。出張撮影のご依頼もお待ちしております。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coandco-photograph.com/">
+    <meta property="og:image" content="https://coandco-photograph.com/assets/images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="co&co photograph | 広島の出張撮影">
+    <meta name="twitter:description" content="広島を拠点とするフォトグラファー co&co photograph。ポートレート、イベント、商用撮影など。">
+    <meta name="twitter:image" content="https://coandco-photograph.com/assets/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="container">
+            <div class="logo">co&co photograph</div>
+            <ul class="nav-links">
+                <li><a href="#hero">ホーム</a></li>
+                <li><a href="#gallery">ギャラリー</a></li>
+                <li><a href="#about">私について</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-content">
+                <h1 class="fade-in">その一瞬に、<br>物語を。</h1>
+                <p class="fade-in">co&co photograph - 記憶に残る一枚をあなたと。</p>
+                <div class="hero-actions fade-in">
+                    <a href="#gallery" class="btn">作品を見る</a>
+                    <a href="#contact" class="btn">撮影を依頼する</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Selected Works</h2>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery items will be populated here -->
+                    <div class="gallery-placeholder">
+                        <p>作品を読み込み中...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="fade-in">About</h2>
+                    <p class="fade-in">
+                        写真には、目に見えない空気感や感情を写し出す力があります。<br>
+                        co&co photographは、お客様一人ひとりの「大切にしたい瞬間」に寄り添い、<br>
+                        いつまでも色褪せない物語として切り取ります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="fade-in">Contact</h2>
+                <p class="subtitle fade-in">撮影のご依頼・ご相談はお気軽にどうぞ。</p>
+
+                <form class="contact-form fade-in" id="contact-form" action="https://formspree.io/f/xwpgjewg"
+                    method="POST">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required placeholder="例：info@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="例：090-1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">ご依頼内容</label>
+                        <select id="type" name="type">
+                            <option value="portrait">ポートレート撮影</option>
+                            <option value="event">イベント・行事撮影</option>
+                            <option value="commercial">商用・ブランド撮影</option>
+                            <option value="other">その他のお問い合わせ</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="撮影希望日や詳細をご記入ください"></textarea>
+                    </div>
+                    <button type="submit" class="btn">送信する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 co&co photograph. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
