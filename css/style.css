@@ -204,8 +204,14 @@ img {
     text-align: center;
     background-color: var(--bg-primary);
     /* Image with white overlay for text contrast (Light Luxury) */
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../assets/images/DSC04951.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../assets/images/DSC04951-optimized.jpg') no-repeat center center/cover;
     padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../assets/images/DSC04951-mobile.jpg');
+    }
 }
 
 .hero-content h1 {

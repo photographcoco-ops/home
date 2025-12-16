@@ -47,12 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('div');
             item.className = 'gallery-item fade-in';
 
-            const img = document.createElement('img');
-            img.src = `assets/images/${filename}`;
-            img.alt = `Portfolio Image ${i + 1}`;
-            img.loading = 'lazy'; // Performance optimization
+            const baseName = filename.replace('.jpg', '');
 
-            item.appendChild(img);
+            // Create Picture element for responsive images
+            const picture = document.createElement('picture');
+
+            // Mobile source (up to 768px)
+            const sourceMobile = document.createElement('source');
+            sourceMobile.media = '(max-width: 768px)';
+            sourceMobile.srcset = `assets/images/${baseName}-mobile.jpg`;
+
+            // Default img
+            const img = document.createElement('img');
+            img.src = `assets/images/${baseName}-optimized.jpg`;
+            img.alt = `Portfolio Image ${i + 1}`;
+            img.loading = 'lazy';
+
+            picture.appendChild(sourceMobile);
+            picture.appendChild(img);
+            item.appendChild(picture);
+
             observer.observe(item);
             galleryGrid.appendChild(item);
         });
